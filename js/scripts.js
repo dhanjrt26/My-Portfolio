@@ -32,3 +32,31 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+
+
+document.querySelectorAll(".carousel").forEach(carousel => {
+  const track = carousel.querySelector(".carousel-track");
+  const items = carousel.querySelectorAll(".carousel-item");
+  const prevBtn = carousel.querySelector(".prev");
+  const nextBtn = carousel.querySelector(".next");
+
+  let index = 0;
+
+  function updateCarousel() {
+    const width = items[0].clientWidth;
+    track.style.transform = `translateX(${-index * width}px)`;
+  }
+
+  nextBtn.addEventListener("click", () => {
+    index = (index + 1) % items.length;
+    updateCarousel();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    index = (index - 1 + items.length) % items.length;
+    updateCarousel();
+  });
+});
+

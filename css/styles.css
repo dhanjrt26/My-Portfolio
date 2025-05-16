@@ -5985,6 +5985,8 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
+  width: 400px;
+  overflow: hidden;
 }
 
 .carousel.pointer-event {
@@ -6003,15 +6005,9 @@ textarea.form-control-lg {
 }
 
 .carousel-item {
-  position: relative;
-  display: none;
-  float: left;
-  width: 100%;
-  margin-right: -100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  transition: transform 0.6s ease-in-out;
+  width: 3 00px;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;
@@ -11387,7 +11383,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: skyblue;
 }
 
 .dev-icons {
@@ -11420,3 +11416,29 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+
+.carousel-container {
+  display: flex;
+  justify-content: space-btween;
+  gap: 5px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
