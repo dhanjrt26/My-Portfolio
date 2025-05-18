@@ -5985,8 +5985,7 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
-  width: 800px;
-  height: 600px;
+  width: 300px;
   overflow: hidden;
 }
 
