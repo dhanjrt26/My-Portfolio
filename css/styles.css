@@ -6006,7 +6006,9 @@ textarea.form-control-lg {
 }
 
 .carousel-item {
-  width: 300px;
+  width: 100px;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
 }
 
 @media (prefers-reduced-motion: reduce) {
