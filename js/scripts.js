@@ -60,3 +60,7 @@ document.querySelectorAll(".carousel").forEach(carousel => {
   });
 });
 
+new Splide('#image-carousel', {
+    heightRatio: 0.5, // Adjusts height based on width
+}).mount();
+

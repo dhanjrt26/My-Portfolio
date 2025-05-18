@@ -6006,9 +6006,26 @@ textarea.form-control-lg {
 }
 
 .carousel-item {
-  width: 100px;
+  width: 100%;
   flex: 0 0 100%;
   scroll-snap-align: start;
+  height: 400px; /* Adjust height as needed */
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel-item img {
+    width: 100%; /* Ensures the image fills the carousel width */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Crops the image to fit */
+}
+
+.splide__slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 @media (prefers-reduced-motion: reduce) {
