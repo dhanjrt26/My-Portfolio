@@ -5985,7 +5985,7 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
-  width: 400px;
+  width: 800px;
   overflow: hidden;
 }
 
@@ -5995,7 +5995,8 @@ textarea.form-control-lg {
 
 .carousel-inner {
   position: relative;
-  width: 100%;
+  width: 300px;
+  height: 100px;
   overflow: hidden;
 }
 .carousel-inner::after {
@@ -6005,7 +6006,7 @@ textarea.form-control-lg {
 }
 
 .carousel-item {
-  width: 3 00px;
+  width: 300px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -11421,7 +11422,7 @@ section.resume-section .resume-section-content {
 .carousel-container {
   display: flex;
   justify-content: space-btween;
-  gap: 5px;
+  gap: 20px;
 }
 
 .carousel-track {
@@ -11442,3 +11443,5 @@ button {
 
 .prev { left: 10px; }
 .next { right: 10px; }
+
+
